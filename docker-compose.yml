@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+
+  node:
+    image: node-react
+    build:
+      context: ./build/node
+    container_name: tutorials-udemy-react-frontend
+    volumes:
+      - ./src/1:/app
+
